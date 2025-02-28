@@ -1,0 +1,88 @@
+header{
+    position: sticky;
+    text-align: center;
+    color:rgb(222, 45, 222);
+    border: 2px solid rgb(228, 130, 196);
+    background-color: rgb(68, 68, 80);
+    
+}
+
+main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 70vh;
+}
+
+*,
+*:before,
+*:after{
+      padding: 0;
+      margin: 0;
+      box-sizing: border-box;
+      font-family: "Poppins",sans-serif;
+}
+
+body{
+    height: 100vh;
+    background: linear-gradient(
+        45deg, rgb(99, 11, 99));
+        
+    background-color: rgb(119, 119, 119);
+}
+
+form{
+    position: fixed;
+    background-color: rgb(231, 230, 230);
+    padding: 50px 40px;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 55%;
+    left: 50%;
+    border-radius: 8px;
+    box-shadow: 20px 20px 30px blueviolet;
+}
+
+input{
+    display: block;
+    margin-top: 5px;
+    width: 80%;
+    padding: 12px;
+    border-radius: 5px;
+    outline: none;
+    color: rgb(0, 0, 0);
+}
+
+input[type="password"],[type="text"],[type="email"],[type="date"]{
+    border: 2px solid rgb(228, 130, 196);
+}
+
+.option{
+    border: 2px solid rgb(228, 130, 196);
+    width: 215px;
+}
+
+p{
+    font-size: 14px;
+    margin: 15px 0;
+    display: inline-block;
+    color:rgb(172, 190, 177);
+    padding: 5px 20px;
+}
+
+.btn-1{
+    background-color: rgb(199, 147, 207);
+    border: none;
+    border-radius: 5px;
+    font-weight: 500;
+    font-size: 25px;
+    letter-spacing: 1px;
+    cursor: pointer;
+    margin-top: 50px;
+}
+
+
+
+.login{
+    color: grey;
+}

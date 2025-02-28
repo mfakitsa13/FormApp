@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Η ιστοσελίδα μου</title>
+    <script defer src="myscript.js"></script>
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <link rel="stylesheet" href="mystyle.css">
+</head>
+<body>
+    <header>
+        <h1>Εγγραφή</h1>
+    </header>
+    <main>
+        <div id='error'></div>
+        <form action="connect.php" method="post"> 
+            <p>
+              <input type="text" id="username" placeholder="Όνομα" required>
+            </p>
+            <p>
+              <input type="text" id="lastname" placeholder="Επώνυμο" required>
+            </p>
+            <p>
+              <input type="text" id="phone_number" placeholder="Αριθμός κινητού" required>
+            </p>
+            <p>
+              <input type="email" id="email" placeholder="Email" required>
+            </p> 
+            <input type="password" id="password" placeholder="Κωδικός πρόσβασης" required onkeyup="validate_password()">
+            <input type="password" id="conf_pass" placeholder="Επανάλαβε τον κωδικό πρόσβασης" required>
+            <ul>
+               <li id='upper'><h5>Τουλάχιστον έναν κεφαλαίο χαρακτήρα</h5></li>
+               <li id='lower'><h5>Τουλάχιστον έναν πεζό χαρακτήρα</h5></li>
+               <li id='special_char'><h5>Τουλάχιστον ένα ειδικό σύμβολο</h5></li>
+               <li id='number'><h5>Τουλάχιστον έναν αριθμό</h5></li>
+           </ul>
+            <p id="message"></p>
+            
+            <h6>Ημερομηνία γέννησης</h6>
+            <input type="date">
+            <br>
+            <div class="option">
+                <select class="selection">
+                    <option value="1">Επιλέξτε την προσφώνησή σας</option>
+                    <option value="2">Θηλυκό</option>
+                    <option value="3">Αρσενικό</option>
+                    <option value="3">Ουδέτερο</option>
+                </select>
+                </div>
+            </div>
+            <br>
+            <button class="btn-1" onclick="validation()";>Σύνδεση</button>
+            
+            <p class="login">Έχετε λογαριασμό;<a href="next.html">Συνδεθείτε εδώ</a></p> 
+         </form>
+    </main>
+  
+</body>
+</html>
