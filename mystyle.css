@@ -9,14 +9,14 @@
 
 /* Body Styling */
 body {
-    height: 100vh;
+    min-height: 100vh; /* Ensures enough height for content */
     background: linear-gradient(45deg, rgb(99, 11, 99), rgb(119, 119, 119));
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
+    justify-content: flex-start; /* Prevents unnecessary centering */
+    padding-top: 60px; /* Reserves space for the header */
 }
-
 /* Header Styling */
 header {
     position: fixed;
@@ -45,28 +45,31 @@ main {
 form {
     display: flex;
     flex-direction: column;
+    align-items: center;
+    justify-content: center;
     background-color: rgb(231, 230, 230);
     padding: 40px;
-    position: absolute;
-    transform: translate(-50%, -50%);
-    box-shadow: 10px 10px 25px rgba(138, 43, 226, 0.5);
-    top: 80%;
-    left: 50%;
     border-radius: 10px;
-    width: 350px;
+    width: 600px;
+    box-shadow: 10px 10px 25px rgba(138, 43, 226, 0.5);
+    
+    position: relative; /* Keeps it in normal document flow */
+    margin-top: 80px; /* Pushes it below the header */
 }
+
 
 /* Input Fields */
 input {
-    display: block;
-    width: 100%;
+    display: flex;
+    width: 80%; /* Ensures input fields take up most of the form width */
     padding: 12px;
-    margin-top: 10px;
+    margin: 10px 0; /* Adds space between inputs */
     border-radius: 5px;
     outline: none;
     color: black;
     border: 2px solid rgb(200, 200, 200);
     transition: border-color 0.3s ease-in-out;
+    text-align: center; /* Centers text inside input fields */
 }
 
 /* Input Focus Effect */
@@ -80,6 +83,11 @@ input[type="text"],
 input[type="email"],
 input[type="date"] {
     border: 2px solid rgb(228, 130, 196);
+}
+
+/* Dropdown Select */
+.option {
+    top: 10px;
 }
 
 /* Paragraph Styling */
@@ -116,4 +124,5 @@ p {
     text-align: center;
     margin-top: 15px;
 }
+
 
