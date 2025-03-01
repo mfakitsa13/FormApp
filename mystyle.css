@@ -82,15 +82,6 @@ input[type="date"] {
     border: 2px solid rgb(228, 130, 196);
 }
 
-/* Dropdown Select */
-.option {
-    border: 2px solid rgb(228, 130, 196);
-    width: 100%;
-    padding: 8px;
-    border-radius: 5px;
-    background-color: white;
-}
-
 /* Paragraph Styling */
 p {
     font-size: 14px;
